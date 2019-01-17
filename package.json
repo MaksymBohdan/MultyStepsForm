@@ -1,8 +1,10 @@
 {
-  "name": "multy-step-form",
+  "name": "MultyStepsForm",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://maksymbohdan.github.io/MultyStepsForm/",
   "dependencies": {
+    "gh-pages": "^2.0.1",
     "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
@@ -17,6 +19,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
